@@ -1,0 +1,39 @@
+<div class="container">  
+      <div class="row-fluid">
+  
+        <div class="col-md-2 well">
+          <div id="calc-board">
+            <div class="row-fluid">
+                <div id="calculator-result"  class="uneditable-input">{{display}}</div>
+            </div>
+            <div class="row-fluid">
+              <a href="#" class="btn btn-danger" data-method="reset" (click)="limpar()">C</a>
+            </div>
+            <div class="row-fluid">
+              <a href="#" class="btn" (click)="adicionarNumero('7')">7</a>
+              <a href="#" class="btn" (click)="adicionarNumero('8')">8</a>
+              <a href="#" class="btn" (click)="adicionarNumero('9')">9</a>
+              <a href="#" class="btn" (click)="definirOperacao('/')">/</a>              
+            </div>
+            <div class="row-fluid">
+              <a href="#" class="btn" (click)="adicionarNumero('4')">4</a>
+              <a href="#" class="btn" (click)="adicionarNumero('5')">5</a>
+              <a href="#" class="btn" (click)="adicionarNumero('6')">6</a>
+              <a href="#" class="btn" (click)="definirOperacao('*')">*</a>              
+            </div>
+            <div class="row-fluid">
+              <a href="#" class="btn" (click)="adicionarNumero('1')">1</a>
+              <a href="#" class="btn" (click)="adicionarNumero('2')">2</a>
+              <a href="#" class="btn" (click)="adicionarNumero('3')">3</a>
+              <a href="#" class="btn" (click)="definirOperacao('-')">-</a>
+            </div>
+            <div class="row-fluid">
+              <a href="#" class="btn" (click)="adicionarNumero('0')">0</a>
+              <a href="#" class="btn" (click)="adicionarNumero('.')">.</a>
+              <a href="#" class="btn" (click)="calcular()">=</a>
+              <a href="#" class="btn" (click)="definirOperacao('+')">+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
